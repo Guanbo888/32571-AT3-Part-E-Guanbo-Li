@@ -1,0 +1,110 @@
+[
+  {
+    "scenario_id": "T013-S01",
+    "case_id": "T013",
+    "function_id": "F13",
+    "function": "Checkout Navigation",
+    "part": "E",
+    "allocated_member": "Guanbo Li",
+    "title": "Empty cart checkout",
+    "planned_input": "Fresh guest session; empty cart",
+    "expected": "Checkout returns to the empty cart; no checkout address form is available.",
+    "expected_basis": "OpenCart visible form/workflow plus business invariants; locked before formal execution."
+  },
+  {
+    "scenario_id": "T013-S02",
+    "case_id": "T013",
+    "function_id": "F13",
+    "function": "Checkout Navigation",
+    "part": "E",
+    "allocated_member": "Guanbo Li",
+    "title": "Guest enters checkout from cart",
+    "planned_input": "Fresh guest session; product 40 quantity 1",
+    "expected": "Cart Checkout opens the checkout flow; selecting Guest Checkout opens billing fields without registration.",
+    "expected_basis": "OpenCart visible form/workflow plus business invariants; locked before formal execution."
+  },
+  {
+    "scenario_id": "T013-S03",
+    "case_id": "T013",
+    "function_id": "F13",
+    "function": "Checkout Navigation",
+    "part": "E",
+    "allocated_member": "Guanbo Li",
+    "title": "Registered customer enters checkout",
+    "planned_input": "Fresh registered account; product 40 quantity 1",
+    "expected": "Header Checkout opens the signed-in billing-address step without guest/login checkout options.",
+    "expected_basis": "OpenCart visible form/workflow plus business invariants; locked before formal execution."
+  },
+  {
+    "scenario_id": "T014-S01",
+    "case_id": "T014",
+    "function_id": "F14",
+    "function": "Billing and Delivery Details",
+    "part": "E",
+    "allocated_member": "Guanbo Li",
+    "title": "Valid shared billing and delivery address",
+    "planned_input": "Guest cart; complete synthetic US/California address; same-address selected",
+    "expected": "Delivery Method becomes available and the supplied billing values remain in the form.",
+    "expected_basis": "OpenCart visible form/workflow plus business invariants; locked before formal execution."
+  },
+  {
+    "scenario_id": "T014-S02",
+    "case_id": "T014",
+    "function_id": "F14",
+    "function": "Billing and Delivery Details",
+    "part": "E",
+    "allocated_member": "Guanbo Li",
+    "title": "Missing billing first name",
+    "planned_input": "Guest cart; valid synthetic address except empty first name",
+    "expected": "A first-name validation error is shown; checkout does not advance to Delivery Method.",
+    "expected_basis": "OpenCart visible form/workflow plus business invariants; locked before formal execution."
+  },
+  {
+    "scenario_id": "T014-S03",
+    "case_id": "T014",
+    "function_id": "F14",
+    "function": "Billing and Delivery Details",
+    "part": "E",
+    "allocated_member": "Guanbo Li",
+    "title": "Different billing and delivery addresses",
+    "planned_input": "Guest cart; same-address unselected; valid distinct synthetic addresses",
+    "expected": "Separate delivery details are accepted; Delivery Method becomes available; billing and shipping fields retain their distinct values.",
+    "expected_basis": "OpenCart visible form/workflow plus business invariants; locked before formal execution."
+  },
+  {
+    "scenario_id": "T015-S01",
+    "case_id": "T015",
+    "function_id": "F15",
+    "function": "Order Confirmation",
+    "part": "E",
+    "allocated_member": "Guanbo Li",
+    "title": "Confirm one-item practice order",
+    "planned_input": "Demo guest checkout; product 40 quantity 1; Test bank-transfer method; no funds sent",
+    "expected": "Review product, quantity and totals are correct; Confirm Order reaches checkout/success and the cart is empty.",
+    "expected_basis": "OpenCart visible form/workflow plus business invariants; locked before formal execution."
+  },
+  {
+    "scenario_id": "T015-S02",
+    "case_id": "T015",
+    "function_id": "F15",
+    "function": "Order Confirmation",
+    "part": "E",
+    "allocated_member": "Guanbo Li",
+    "title": "Confirm multi-quantity practice order",
+    "planned_input": "Demo guest checkout; product 40 quantity 2; Test bank-transfer method; no funds sent",
+    "expected": "Review quantity and line amounts are correct; confirmation reaches checkout/success and the cart is empty.",
+    "expected_basis": "OpenCart visible form/workflow plus business invariants; locked before formal execution."
+  },
+  {
+    "scenario_id": "T015-S03",
+    "case_id": "T015",
+    "function_id": "F15",
+    "function": "Order Confirmation",
+    "part": "E",
+    "allocated_member": "Guanbo Li",
+    "title": "Confirm two-product practice order",
+    "planned_input": "Demo guest checkout; products 40 and 43, quantity 1 each; Test bank-transfer method; no funds sent",
+    "expected": "Both review rows and totals are correct; confirmation reaches checkout/success and the cart is empty.",
+    "expected_basis": "OpenCart visible form/workflow plus business invariants; locked before formal execution."
+  }
+]

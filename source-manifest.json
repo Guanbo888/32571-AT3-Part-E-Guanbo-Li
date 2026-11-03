@@ -1,0 +1,12 @@
+{
+  "Prompt record.md": "60859b4d9ec64091e54213fa2837a62b90be1847655597d237eb3f5a28869509",
+  "README.md": "d1d00be898fb6ffd3353d95f67fe91b11ed9f01fb6d8c22cae8f7cd2f9ed5451",
+  "conftest.py": "c292519e165de9efe1f545be46ad187611bf5c01a0c1687e643225fcf32133c2",
+  "pytest.ini": "bf36a47a23e68c2851942d562e799aa545e1bc9ebe00523755eefdc3ee969d2f",
+  "requirements.txt": "8f292e54d965ae340d4d455a86786107996e900f236ead1bc9dea8a4b411b612",
+  "scenario-design.json": "a034893e52f489d20a2b760e935ba062dc18be70dcd15b618e67ad36e22a30da",
+  "tests/test_13_checkout.py": "ebddc84c0618a5cf44e8c6761129f65c1aecdf4cf23d542bdae58c821cbe4e21",
+  "tests/test_14_address.py": "f47d31168efca5538b111382fddbf186fcab6a2e87f711c900854dda703e92cc",
+  "tests/test_15_confirmation.py": "f3abe86596d9d70ae7bbceeb97d477b816ebded93d7f24163ac59919d4a1fa25",
+  "ui_helpers.py": "3d3df28042d6c08109fd354148c7c367ed789c5cc6f33e8978fa8d1050350ec9"
+}
